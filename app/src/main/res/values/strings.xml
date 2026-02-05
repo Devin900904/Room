@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Room</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">name\n\n</string>
+    <string name="enter_username">Enter UserName</string>
+    <string name="emp_id">emp_id\n</string>
+    <string name="enter_emp_id">Enter Emp ID</string>
+    <string name="emp_address">amtaddress\n</string>
+    <string name="emp_Exp">Exp\n</string>
+    <string name="enter_emp_address">Enter Address\n\n</string>
+    <string name="enter_emp_Exp">Enter Experience</string>
+    <string name="emp_Dep">Dep\n</string>
+    <string name="enter_emp_Departent">Enter Deparent\n</string>
+    <string name="bte_Save">Save</string>
+    <string name="btn_View">VIEW</string>
+    <string name="enterword">anterword</string>
+    <string name="empid">Emp id</string>
+    <string name="delete">delete\n\n</string>
+    <string name="address">adrress</string>
+    <string name="department">dep\n</string>
+    <string name="experience">exp\n</string>
+</resources>

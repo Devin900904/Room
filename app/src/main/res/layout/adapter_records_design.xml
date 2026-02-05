@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <variable
+            name="record"
+            type="te.oldpa.myroom.Empliyee" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/_16ssp"
+            android:id="@+id/TvNameText"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/name"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TvNameText"
+            android:textSize="@dimen/_16ssp"
+            android:text="@{record.name}"
+            android:id="@+id/DisplayName"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/DisplayName"
+            android:textSize="@dimen/_16ssp"
+            android:text="@string/emp_id"
+            android:id="@+id/EmpIdText"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/EmpIdText"
+            android:textSize="@dimen/_16ssp"
+            android:text="@{Long.toString(record.id)}"
+            android:id="@+id/DisplayId"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/DisplayId"
+            android:textSize="@dimen/_16ssp"
+            android:text="@string/address"
+            android:id="@+id/AddressText"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/AddressText"
+            android:textSize="@dimen/_16ssp"
+            android:text="@{record.address}"
+            android:id="@+id/DisplayAdd"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/DisplayAdd"
+            android:textSize="@dimen/_16ssp"
+            android:text="@string/experience"
+            android:id="@+id/ExpText"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ExpText"
+            android:textSize="@dimen/_16ssp"
+            android:text="@{record.experience}"
+            android:id="@+id/DisplayExp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/DisplayExp"
+            android:textSize="@dimen/_16ssp"
+            android:text="@string/department"
+            android:id="@+id/DeptText"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/DeptText"
+            android:textSize="@dimen/_16ssp"
+            android:text="@{record.department}"
+            android:id="@+id/DisplayDept"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/DisplayDept"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/btnDelete"
+            android:text="@string/delete"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
